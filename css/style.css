@@ -1,0 +1,42 @@
+html {
+    font-family: Inter;
+}
+
+.alerta {
+    background: #FFB64A;
+    padding: 1px;
+    margin-bottom: 15px;
+}
+
+.menu {
+    background: #FBABB0;
+    padding: 1px;
+}
+
+.menu-carro {
+    background: #FFB64A;
+    padding: 1px;
+}
+
+.mini-card-purple {
+    background: #DF8FE1;
+    padding: 1px;
+    margin-bottom: 10px;
+}
+
+.mini-card-orange {
+    background: #FF7820;
+    padding: 1px;
+    margin-bottom: 10px;
+}
+
+.mini-card-pink {
+    background: #FDDBDD;
+    padding: 1px;
+    margin-bottom: 10px;
+}
+
+.footer {
+    background: #FFB64A;
+    padding: 1px;
+}
