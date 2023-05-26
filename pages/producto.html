@@ -7,60 +7,103 @@
         <title>Camilili Design</title>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="../css/style.css">
+        <link rel="stylesheet" href="../css/style-with-bootstrap.css">
     </head>
 
     <body>
-        <header>
-            <section>
-                <div class="alerta">
+        <header class="container-fluid">
+            <section class="row">
+                <div class="alerta col-12">
                     <p>Haz tu pedido con 10 días de anticipación</p>
                 </div>
             </section>
-            <section>
-                <a href="/index.html">
+            <section class="logo row">
+                <a href="/index.html" class="col-12">
                     <img src="../assets/img/logo.png" alt="logo">
                 </a>
             </section>
-            <section>
-                <div class="menu">
-                    <ul>
-                        <li><a href="./catalogo.html">Agendas</a></li>
-                        <li><a href="./catalogo.html">Cuadernos</a></li>
-                        <li><a href="#">Fotografias</a></li>
-                        <li><a href="#">Candy Bar</a></li>
-                    </ul>
-                </div>
-            </section>
-        </header>
-        <main>
-            <section>
-                <img src="../assets/img/Rectangle-19.jpg" alt="agenda">
-                <div>
-                    <img src="../assets/img/rectangle-pink.jpg" alt="preview">
-                    <img src="../assets/img/rectangle-pink.jpg" alt="preview">
-                    <img src="../assets/img/rectangle-pink.jpg" alt="preview">
-                </div>
-            </section>
-            <section>
-                <h2>Planner 2023</h2>
-                <h3>$12.990</h3>
-                <div>
-                    <p>Descripción</p>
-                    <p>Detalle</p>
-                </div>
-                <div>
-                    <div>
-                        <button>-</button>
-                        <p>1</p>
-                        <button>+</button> 
+            <nav class="navbar navbar-expand-lg menu row">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./catalogo.html">Agendas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./catalogo.html">Cuadernos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Fotografias</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link">Candy Bar</a>
+                            </li>
+                        </ul>
                     </div>
-                    <button>Agregar al carro</button>
                 </div>
-            </section>
+            </nav>
+        </header>
+        <main class="container-fluid">
+            <div class="row my-5">
+                <section class="col-12 col-md-6">
+                    <img src="../assets/img/Rectangle-19.jpg" class="img-fluid" alt="agenda">
+                    <div class="mt-3 d-flex gap-3">
+                        <img src="../assets/img/rectangle-pink.jpg" alt="preview">
+                        <img src="../assets/img/rectangle-pink.jpg" alt="preview">
+                        <img src="../assets/img/rectangle-pink.jpg" alt="preview">
+                    </div>
+                </section>
+                <section class="col-12 col-md-6">
+                    <h2 class="text-center">Planner 2023</h2>
+                    <h3 class="text-center">$12.990</h3>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    Descripción
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">¡La Agenda Elegance: tu aliada para una organización impecable! Diseño moderno y funcional para planificar tus metas y actividades con estilo.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                    Detalle
+                                </button>
+                            </h2>
+                            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Tamaño compacto y portátil, perfecto para llevarla a cualquier parte.</li>
+                                        <li class="list-group-item">Cantidad de páginas: 200 hojas en blanco de alta calidad.</li>
+                                        <li class="list-group-item">Diseño semanal para una visión clara de tus actividades.</li>
+                                        <li class="list-group-item">Incluye secciones para metas mensuales y anuales.</li>
+                                        <li class="list-group-item">Calendario anual desplegable para una planificación global.</li>
+                                        <li class="list-group-item">Espacio adicional para notas y recordatorios.</li>
+                                    </ul>                                      
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex align-items-center rounded-pill contador">
+                            <button class="btn btn-circulo">-</button>
+                            <p>1</p>
+                            <button class="btn btn-circulo">+</button> 
+                        </div>
+                        <button class="btn rounded-pill btn-agregar">Agregar al carro</button>
+                    </div>
+                </section>
+            </div>
         </main>
-        <footer class="footer">
+        <footer class="footer d-flex gap-3">
             <p>Camilili Design</p>
             <a href="./preguntas.html">Preguntas Frecuentes</a>
             <div>
@@ -69,5 +112,6 @@
                 <img src="../assets/img/correo.png" alt="logo-correo">
             </div>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     </body>
 </html>
