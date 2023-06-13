@@ -1,0 +1,6 @@
+@media (min-width: 1440px) {
+  /* CATALOGO */
+  .catalogo section {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

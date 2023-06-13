@@ -1,0 +1,17 @@
+@media (min-width: 1024px) {
+  .productos {
+    gap: 40px;
+  }
+
+  .mini-cards {
+    grid-template-columns: repeat(3, 1fr);
+    div:nth-child(3) {
+      grid-column: unset;
+    }
+  }
+
+  /* CATALOGO */
+  .catalogo section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,0 +1,103 @@
+body {
+  @include grid(none, none, normal normal, "header""main""footer", normal, normal);
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+.alerta {
+  background: $color-orange;
+  padding: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.logo {
+  text-align: center;
+}
+
+.menu {
+  background: #FBABB0;
+  padding: 20px;
+  ul {
+    @include flex(column, nowrap, flex-start, center, 10px);
+    list-style: none;
+    li {
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+}
+
+.menu-carro {
+  background: $color-orange;
+  padding: 20px;
+}
+
+.home {
+  @include grid(none, none, normal normal, "banner""subtitulo""productos""mini-cards", normal, normal);
+}
+
+.banner {
+  width: 100%;
+  grid-area: banner;
+}
+
+.subtitulo {
+  grid-area: subtitulo;
+  margin: 40px 0;
+  text-align: center;
+}
+
+.productos {
+  grid-area: productos;
+  @include flex(row, wrap, center, normal, 30px);
+  margin-bottom: 40px;
+}
+
+.mini-cards {
+  grid-area: mini-cards;
+  @include grid(repeat(1, 1fr), none, 30px, none, normal, normal);
+  margin: 20px;
+  > * {
+    @include flex(row, wrap, center, center, normal normal);
+  }
+  .mini-card-purple {
+    background: #DF8FE1;
+    padding: $mini-card-padding;
+    margin-bottom: $mini-card-margin;
+  }
+  .mini-card-orange {
+    background: #FF7820;
+    padding: $mini-card-padding;
+    margin-bottom: $mini-card-margin;
+  }
+  .mini-card-pink {
+    background: #FDDBDD;
+    padding: $mini-card-padding;
+    margin-bottom: $mini-card-margin;
+  }
+}
+
+.footer {
+  @include flex(column, nowrap, space-between, center, normal normal);
+  background: $color-orange;
+  padding: 20px;
+  gap: 20px;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
