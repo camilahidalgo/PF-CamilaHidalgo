@@ -36,6 +36,12 @@ main {
       a {
         text-decoration: none;
         color: black;
+        padding: 10px 20px;
+        border-radius: 25px;
+        transition: background-color 0.8s;
+        &:hover {
+          background-color: white;
+        }
       }
     }
   }
