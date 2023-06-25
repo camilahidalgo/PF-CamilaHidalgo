@@ -1,0 +1,145 @@
+/* BASE */
+
+.bg-yellow {
+  background-color: #ffb64a;
+}
+
+.bg-pink {
+  background-color: #fbabb0;
+}
+
+/* REBOOT BOOTSTRAP */
+
+ul {
+  margin-bottom: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+/* GENERAL */
+
+html {
+  font-family: Inter;
+}
+
+img {
+  max-width: 100%;
+}
+
+.alerta {
+  @extend .bg-yellow;
+  padding: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo-carro {
+  max-width: 200px;
+}
+
+.menu {
+  @extend .bg-pink;
+  padding: 20px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+main .row:first-child .col-12:last-child {
+  margin-top: 30px;
+}
+
+.footer {
+  @extend .bg-yellow;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer a {
+  text-decoration: none;
+  color: black;
+}
+
+/* PRODUCTO */
+
+.contador {
+  border: 1px solid#FFE5C0;
+  column-gap: 20px;
+  padding: 5px;
+}
+
+.btn-circulo {
+  background-color: #ffe5c0;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.btn-agregar {
+  @extend .bg-yellow;
+  padding: 0 30px;
+}
+
+/* CARRITO DE COMPRAS */
+.form-text {
+  color: #8F757B;
+  font-weight: 600;
+}
+
+.form-carro {
+  label {
+    @extend .form-text;
+  }
+
+  textarea, input {
+    border: 1px solid #DF8FE1;
+  }
+}
+
+.card-pink {
+  background: #FBABB080;
+  border: none;
+
+  .card-title {
+    @extend .form-text;
+  }
+
+  .resumen {
+    th {
+      text-align: center;
+    }
+    td {
+      text-align: center;
+      img {
+        max-width: 50px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .logo img {
+    max-width: 600px;
+  }
+
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  main .row:first-child .col-12:last-child {
+    margin-top: 0;
+  }
+}

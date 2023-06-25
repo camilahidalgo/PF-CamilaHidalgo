@@ -1,0 +1,96 @@
+/* REBOOT BOOTSTRAP */
+
+ul {
+  margin-bottom: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+/* GENERAL */
+
+html {
+  font-family: Inter;
+}
+
+img {
+  max-width: 100%;
+}
+
+.alerta {
+  background: #ffb64a;
+  padding: 20px;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.logo {
+  text-align: center;
+}
+
+.menu {
+  background: #fbabb0;
+  padding: 20px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+main .row:first-child .col-12:last-child {
+  margin-top: 30px;
+}
+
+.footer {
+  background: #ffb64a;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer a {
+  text-decoration: none;
+  color: black;
+}
+
+/* PRODUCTO */
+
+.contador {
+  border: 1px solid#FFE5C0;
+  column-gap: 20px;
+  padding: 5px;
+}
+
+.btn-circulo {
+  background-color: #ffe5c0;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+
+.btn-agregar {
+  background-color: #ffb64a;
+  padding: 0 30px;
+}
+
+/* CARRITO DE COMPRAS */
+
+@media (min-width: 768px) {
+  .logo img {
+    max-width: 600px;
+  }
+
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  main .row:first-child .col-12:last-child {
+    margin-top: 0;
+  }
+}

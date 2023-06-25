@@ -47,11 +47,6 @@ main {
   }
 }
 
-.menu-carro {
-  background: $color-orange;
-  padding: 20px;
-}
-
 .home {
   @include grid(none, none, normal normal, "banner""subtitulo""productos""mini-cards", normal, normal);
 }
